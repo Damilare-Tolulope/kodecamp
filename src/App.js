@@ -601,10 +601,12 @@ const App = () => {
     },
   ])
   return (
-    <div className="container">
+    <>
       <p style={{fontSize:'16px', fontWeight:'bold',marginBottom:'20px', textTransform:'uppercase'}}>Gift Cards and its currencies</p>
+    <div className="container">
       {allGiftCards.map(card => <Card key={card.id} card={card} />)}
     </div>
+    </>
   )
 }
 
